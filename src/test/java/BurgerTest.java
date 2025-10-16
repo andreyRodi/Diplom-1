@@ -7,7 +7,6 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import praktikum.Bun;
 import praktikum.Burger;
 import praktikum.Ingredient;
@@ -26,7 +25,6 @@ public class BurgerTest {
     Bun bun;
 
     private Burger burger;
-    private Ingredient ingredient;
 
 
     @BeforeEach
@@ -162,29 +160,6 @@ public class BurgerTest {
 
     }
 }
-
-
-/*
-
-хэппи пас
-только с ингредиентами
-без ничего
-без цены
-
- public String getReceipt() {
-        StringBuilder receipt = new StringBuilder(String.format("(==== %s ====)%n", bun.getName()));
-
-        for (Ingredient ingredient : ingredients) {
-            receipt.append(String.format("= %s %s =%n", ingredient.getType().toString().toLowerCase(),
-                    ingredient.getName()));
-        }
-
-        receipt.append(String.format("(==== %s ====)%n", bun.getName()));
-        receipt.append(String.format("%nPrice: %f%n", getPrice()));
-
-        return receipt.toString();
-    }
- */
 
 
 
